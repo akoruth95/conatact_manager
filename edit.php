@@ -61,5 +61,8 @@
     <textarea class="form-control" name="description" id="contact_description"><?= $contact['notes']; ?></textarea>
   </div>
 
-  <button class="btn btn-primary">Save contact</button>
+  <button class="btn btn-primary" type="submit">Save contact</button>
+  <button class="btn btn-primary" type="reset">Reset contact</button>
 </form>
+
+<?php include 'footer.php'; ?>
