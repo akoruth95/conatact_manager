@@ -8,7 +8,6 @@
     (:fname, :lname, :title, :address, :city, :state, :zip, :phone, :notes)
     ");
 
-    print_r($query);
 
     $query->execute(array(
       ':fname' => $_POST['fname'],

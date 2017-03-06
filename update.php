@@ -17,4 +17,4 @@ $query->execute(array(
   ':id' => $_POST['id']
 ));
 
-header('Location: http://localhost:8080/index.php');
+header('Location: http://localhost:8080/edit.php?updated=true&id=' . $_POST['id']);

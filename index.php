@@ -5,6 +5,11 @@
 
 ?>
 
+<?php if (array_key_exists('deleted', $_GET)) : ?>
+<div class="alert alert-danger">
+  <p><strong>Task Deleted!</strong> The task was removed.</p>
+</div>
+<?php endif; ?>
 
 <?php foreach($contacts as $contact) : ?>
   <a href="/edit.php?id=<?= $contact['id']; ?>">
@@ -16,7 +21,7 @@
       <?= $contact['city'] . ', ' . $contact['state']; ?>
     </div>
   </div>
-  </a>  
+  </a>
 <?php endforeach; ?>
 
 <?php include 'footer.php'; ?>
