@@ -58,7 +58,7 @@
 
   <div class="form-group">
     <label for="contact_description">Notes</label>
-    <textarea class="form-control" name="description" id="contact_description"><?= $contact['notes']; ?></textarea>
+    <textarea class="form-control" name="notes" id="contact_notes"><?= $contact['notes']; ?></textarea>
   </div>
 
   <button class="btn btn-primary" type="submit">Save contact</button>
