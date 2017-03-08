@@ -15,10 +15,18 @@
   <a href="/edit.php?id=<?= $contact['id']; ?>">
   <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><span class="badge"><?= $contact['id']; ?></span><?= $contact['fname'] . ' ' . $contact['lname']; ?></h3>
+        <h4 class="panel-title"><span class="label label-info"><?= $contact['id']; ?></span><?= $contact['fname'] . ' ' . $contact['lname']; ?></h4>
       </div>
     <div class="panel-body">
-      <?= $contact['city'] . ', ' . $contact['state']; ?>
+      <div class="col-md-4">
+        <?= $contact['address']; ?>
+      </div>
+      <div class="col-md-4">
+        <?= $contact['city'] . ', ' . $contact['state']; ?>
+      </div>
+      <div class="col-md-4">
+        <?= $contact['phone']; ?>
+      </div>
     </div>
   </div>
   </a>
