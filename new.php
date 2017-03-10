@@ -5,7 +5,7 @@
 ?>
 
 <h1> New Contact</h1>
-<form method="POST" action="/create.php">
+<form method="POST" action="/create.php"> <!-- form fields to create new contact with info -->
 
   <span>
   <div class="form-group">

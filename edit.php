@@ -11,22 +11,21 @@
 
 ?>
 
-<?php if (array_key_exists('updated', $_GET)) : ?>
+<?php if (array_key_exists('updated', $_GET)) : ?> <!-- triggered when contact is updated and saved -->
 <div class="alert alert-success">
-  <p><strong>Update successful!</strong> Your task was updated.</p>
+  <p><strong>Update successful!</strong> Your Contact was updated.</p>
 </div>
 <?php endif; ?>
 
 <?php if (array_key_exists('created', $_GET)) : ?>
 <div class="alert alert-info">
-  <p><strong>Task created!</strong> Your task was successfully created.</p>
+  <p><strong>Contact created!</strong> Your Contact was successfully created.</p> <!-- triggered when contact has been created and saved -->
 </div>
 <?php endif; ?>
 
-<a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-xs pull-right btn-delete">Delete Task</a>
 
 <h1> Edit Contact</h1>
-<form method="POST" action="/update.php">
+<form method="POST" action="/update.php"> <!-- form fields to update contact info -->
   <input type="hidden" name="id" id="contact_id" value="<?= $contact['id']; ?>" />
 
   <span>
@@ -77,6 +76,7 @@
 
   <button class="btn btn-primary" type="submit">Save contact</button>
   <button class="btn btn-primary" type="reset">Reset contact</button>
+  <a href="/delete.php?id=<?= $contact['id']; ?>" class="btn btn-danger btn-delete">Delete Contact</a>
 </form>
 
 <?php include 'footer.php'; ?>

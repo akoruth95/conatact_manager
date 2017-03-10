@@ -7,11 +7,11 @@
 
 <?php if (array_key_exists('deleted', $_GET)) : ?>
 <div class="alert alert-danger">
-  <p><strong>Task Deleted!</strong> The task was removed.</p>
+  <p><strong>Contact Deleted!</strong> The Contact was removed.</p>
 </div>
 <?php endif; ?>
 
-<?php foreach($contacts as $contact) : ?>
+<?php foreach($contacts as $contact) : ?> <!-- loops through contacts obtained by query in line 4 -->
   <a href="/edit.php?id=<?= $contact['id']; ?>">
   <div class="panel panel-default">
       <div class="panel-heading">
