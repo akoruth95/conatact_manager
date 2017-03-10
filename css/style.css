@@ -90,8 +90,8 @@ a, a:visited, a:hover, a:active, a:focus {
   width: 100px;
   height: 100px;
   background-color: #E6E6E6;
-  border-radius: 10px;
-  box-shadow: 1px 1px 4px 4px #888888;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px #9a9a9a;
 }
 
 .color-gray-2 {
@@ -141,4 +141,79 @@ a, a:visited, a:hover, a:active, a:focus {
 
 .styleguide {
   margin: 70px;
+}
+
+.plight {
+  font-weight: lighter;
+  letter-spacing: .07em;
+}
+
+.pnormal {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.plead {
+  font-size: 20px;
+}
+
+#stylebutton-large {
+padding: 15px 35px;
+font-size: 30px;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+touch-action: manipulation;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+#stylebutton-medium {
+  background-color: #99CAE8;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+#stylebutton-small {
+  background-color: #337AB7;
+  border: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.styledlist {
+  list-style-type: none;
+}
+
+#orderedItem1 .panel {
+  background-color: #337AB7;
+  color: white;
+}
+
+#orderedItem2 .panel {
+  background-color: #337AB7;
+  color: white;
+}
+
+#orderedItem3 .panel {
+  background-color: #337AB7;
+  color: white;
+}
+
+ol .panel:hover {
+  outline:none;
+  border: none;
+  box-shadow: none;
 }
